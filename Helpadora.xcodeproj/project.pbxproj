@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B71D88C261C2FA2003AFCF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B71D88B261C2FA2003AFCF8 /* GoogleService-Info.plist */; };
+		1B71D89A261C3340003AFCF8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71D899261C3340003AFCF8 /* LoginViewController.swift */; };
+		1B71D8A8261DC8F5003AFCF8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71D8A7261DC8F5003AFCF8 /* RegisterViewController.swift */; };
 		1BFA223D261B1DC900040668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA223C261B1DC900040668 /* AppDelegate.swift */; };
 		1BFA223F261B1DC900040668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA223E261B1DC900040668 /* SceneDelegate.swift */; };
 		1BFA2241261B1DC900040668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA2240261B1DC900040668 /* ViewController.swift */; };
 		1BFA2244261B1DC900040668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFA2242261B1DC900040668 /* Main.storyboard */; };
 		1BFA2246261B1DCC00040668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFA2245261B1DCC00040668 /* Assets.xcassets */; };
 		1BFA2249261B1DCC00040668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFA2247261B1DCC00040668 /* LaunchScreen.storyboard */; };
+		39F15495914B426E40430DE5 /* Pods_Helpadora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39E0932BD535BB4CC3053A2 /* Pods_Helpadora.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B71D88B261C2FA2003AFCF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1B71D899261C3340003AFCF8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B71D8A7261DC8F5003AFCF8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1BFA2239261B1DC900040668 /* Helpadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helpadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFA223C261B1DC900040668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BFA223E261B1DC900040668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		1BFA2245261B1DCC00040668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BFA2248261B1DCC00040668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFA224A261B1DCC00040668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1B3F93AFF854F90372AB2D /* Pods-Helpadora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpadora.debug.xcconfig"; path = "Target Support Files/Pods-Helpadora/Pods-Helpadora.debug.xcconfig"; sourceTree = "<group>"; };
+		89C7BE1C687D77661168EA00 /* Pods-Helpadora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helpadora.release.xcconfig"; path = "Target Support Files/Pods-Helpadora/Pods-Helpadora.release.xcconfig"; sourceTree = "<group>"; };
+		E39E0932BD535BB4CC3053A2 /* Pods_Helpadora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helpadora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F15495914B426E40430DE5 /* Pods_Helpadora.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				1BFA223B261B1DC900040668 /* Helpadora */,
 				1BFA223A261B1DC900040668 /* Products */,
+				23B8959596FB60CDE383BBD6 /* Pods */,
+				961B81B649797B11AF1015EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +72,32 @@
 				1BFA223C261B1DC900040668 /* AppDelegate.swift */,
 				1BFA223E261B1DC900040668 /* SceneDelegate.swift */,
 				1BFA2240261B1DC900040668 /* ViewController.swift */,
+				1B71D899261C3340003AFCF8 /* LoginViewController.swift */,
 				1BFA2242261B1DC900040668 /* Main.storyboard */,
 				1BFA2245261B1DCC00040668 /* Assets.xcassets */,
 				1BFA2247261B1DCC00040668 /* LaunchScreen.storyboard */,
 				1BFA224A261B1DCC00040668 /* Info.plist */,
+				1B71D88B261C2FA2003AFCF8 /* GoogleService-Info.plist */,
+				1B71D8A7261DC8F5003AFCF8 /* RegisterViewController.swift */,
 			);
 			path = Helpadora;
+			sourceTree = "<group>";
+		};
+		23B8959596FB60CDE383BBD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B1B3F93AFF854F90372AB2D /* Pods-Helpadora.debug.xcconfig */,
+				89C7BE1C687D77661168EA00 /* Pods-Helpadora.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		961B81B649797B11AF1015EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39E0932BD535BB4CC3053A2 /* Pods_Helpadora.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BFA224D261B1DCC00040668 /* Build configuration list for PBXNativeTarget "Helpadora" */;
 			buildPhases = (
+				FE69586B3B565C6B6883021B /* [CP] Check Pods Manifest.lock */,
 				1BFA2235261B1DC900040668 /* Sources */,
 				1BFA2236261B1DC900040668 /* Frameworks */,
 				1BFA2237261B1DC900040668 /* Resources */,
+				135A6587566780EBF56B5ADD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFA2249261B1DCC00040668 /* LaunchScreen.storyboard in Resources */,
+				1B71D88C261C2FA2003AFCF8 /* GoogleService-Info.plist in Resources */,
 				1BFA2246261B1DCC00040668 /* Assets.xcassets in Resources */,
 				1BFA2244261B1DC900040668 /* Main.storyboard in Resources */,
 			);
@@ -132,11 +168,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		135A6587566780EBF56B5ADD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Helpadora/Pods-Helpadora-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Helpadora/Pods-Helpadora-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Helpadora/Pods-Helpadora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE69586B3B565C6B6883021B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Helpadora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BFA2235261B1DC900040668 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B71D89A261C3340003AFCF8 /* LoginViewController.swift in Sources */,
+				1B71D8A8261DC8F5003AFCF8 /* RegisterViewController.swift in Sources */,
 				1BFA2241261B1DC900040668 /* ViewController.swift in Sources */,
 				1BFA223D261B1DC900040668 /* AppDelegate.swift in Sources */,
 				1BFA223F261B1DC900040668 /* SceneDelegate.swift in Sources */,
@@ -283,6 +363,7 @@
 		};
 		1BFA224E261B1DCC00040668 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1B3F93AFF854F90372AB2D /* Pods-Helpadora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		1BFA224F261B1DCC00040668 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C7BE1C687D77661168EA00 /* Pods-Helpadora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
