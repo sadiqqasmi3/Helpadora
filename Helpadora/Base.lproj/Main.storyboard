@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0eK-fQ-5b3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZiZ-T0-SVI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -54,6 +54,14 @@
                                     <action selector="login_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWC-8Q-JIV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1G-Nb-EIx">
+                                <rect key="frame" x="149" y="563" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create account"/>
+                                <connections>
+                                    <segue destination="0eK-fQ-5b3" kind="show" id="MYe-9x-0fW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,6 +70,7 @@
                     <connections>
                         <outlet property="email_text_field" destination="pv7-tC-B09" id="3Iu-wq-6uc"/>
                         <outlet property="pass_text_field" destination="y1l-k4-rJS" id="37u-5V-VnS"/>
+                        <segue destination="hUS-kV-B8l" kind="show" identifier="toHome" id="Ix0-gz-hhz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -161,62 +170,118 @@
                         <viewLayoutGuide key="safeArea" id="Ktc-ya-S8g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0fg-QD-5t6"/>
                     <connections>
                         <outlet property="dob_text_field" destination="csP-DQ-CzL" id="ThX-YS-nTG"/>
                         <outlet property="email_text_field" destination="nii-Gy-uqt" id="Rkh-bn-xJ0"/>
                         <outlet property="password_text_field" destination="gK9-PX-JGC" id="dD0-r1-0Ti"/>
                         <outlet property="program_text_field" destination="5RG-cO-3XL" id="hNO-XL-doP"/>
                         <outlet property="user_name_text_field" destination="VpU-or-Gn1" id="7AL-hN-qfJ"/>
+                        <segue destination="hUS-kV-B8l" kind="show" id="UN6-dw-qb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAq-Kl-m1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1521.7391304347827" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--community-->
         <scene sceneID="zKn-Gd-DAE">
             <objects>
-                <viewController id="mpi-mG-gDs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="communityVC" id="mpi-mG-gDs" customClass="CommunityViewController" customModule="Helpadora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5s-an-2e9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ZnK-Z1-yx5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="community" image="person.3" catalog="system" id="bit-N0-rwa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsf-xO-sCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237.68115942029" y="75.669642857142847"/>
+            <point key="canvasLocation" x="3148" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--more-->
         <scene sceneID="ayE-U5-YMf">
             <objects>
-                <viewController id="U93-kF-rzf" sceneMemberID="viewController">
+                <viewController id="U93-kF-rzf" customClass="MoreViewController" customModule="Helpadora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZM7-IJ-Kgy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-Xi-3Ae">
+                                <rect key="frame" x="135" y="433" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout_button:" destination="U93-kF-rzf" eventType="touchUpInside" id="14h-Tx-3Yn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Sm7-4F-cGh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="more" image="ellipsis" catalog="system" id="I5P-08-et3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypr-M6-Ifl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="984"/>
+            <point key="canvasLocation" x="2238" y="802"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit Query View Controller-->
         <scene sceneID="ZRZ-VD-jbh">
             <objects>
-                <viewController id="FCK-AY-CVd" sceneMemberID="viewController">
+                <viewController id="FCK-AY-CVd" customClass="SubmitQueryViewController" customModule="Helpadora" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hil-Wd-2Lq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your query" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l2H-qR-ZHw">
+                                <rect key="frame" x="69" y="203" width="278" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary Blue"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFS-bD-Q8e">
+                                <rect key="frame" x="111" y="721" width="193" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Amber Yellow"/>
+                                <color key="tintColor" name="Dark Black"/>
+                                <state key="normal" title="Submit Query"/>
+                                <connections>
+                                    <action selector="submit_query:" destination="FCK-AY-CVd" eventType="touchUpInside" id="Oz6-zu-eVg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Query Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSs-Be-hOO">
+                                <rect key="frame" x="69" y="138" width="162" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wao-Zh-nLe">
+                                <rect key="frame" x="69" y="571" width="278" height="106"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="D3U-3A-NDC">
+                                <rect key="frame" x="69" y="443" width="278" height="98"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HhM-g5-9cg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="C10-ZS-BSY"/>
+                    <connections>
+                        <outlet property="last_date_picker" destination="D3U-3A-NDC" id="Lem-gN-z5N"/>
+                        <outlet property="location_picker" destination="wao-Zh-nLe" id="lUE-Mw-1HJ"/>
+                        <outlet property="query_description" destination="l2H-qR-ZHw" id="23w-Ed-Elr"/>
+                        <outlet property="query_title" destination="gSs-Be-hOO" id="LSE-Jd-0R6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dF-9n-N0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2973.913043478261" y="75.669642857142847"/>
+            <point key="canvasLocation" x="3148" y="802"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dG7-tR-apV">
@@ -236,17 +301,59 @@
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="76.339285714285708"/>
         </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="ETU-Jk-AUX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hUS-kV-B8l" customClass="TabViewController" customModule="Helpadora" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xKs-gC-Csm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9f8-Aq-vPl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mpi-mG-gDs" kind="relationship" relationship="viewControllers" id="pMh-Zd-pvQ"/>
+                        <segue destination="FCK-AY-CVd" kind="relationship" relationship="viewControllers" id="qin-pb-QQq"/>
+                        <segue destination="U93-kF-rzf" kind="relationship" relationship="viewControllers" id="oth-Wx-M3i"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXa-9B-gz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341" y="76"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UN6-dw-qb4"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="SignUp_image" width="414" height="192"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="Amber Yellow">
             <color red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark Black">
+            <color red="0.1289999932050705" green="0.1289999932050705" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary Blue">
             <color red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

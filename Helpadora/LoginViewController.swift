@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
             if error != nil{
                 print(error!)
             }
+            self.performSegue(withIdentifier: "toHome", sender: self)
         }
     }
     
